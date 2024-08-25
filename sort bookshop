@@ -1,0 +1,57 @@
+class Solution(object):
+    def fractionAddition(self, expression):
+        """
+        :type expression: str
+        :rtype: str
+        """
+        if expression[0] == '-':
+            num1 = expression[1]
+            num2 = expression[5]
+            den1 = expression[3]
+            den2 = expression[7]
+            isNegative1 = True
+            if expression[4] == '-':
+                isNegative2 = True
+            else:
+                isNegative2 = False
+        
+        else:
+            num1 = expression[0]
+            num2 = expression[4]
+            den1 = expression[2]
+            den2 = expression[6]
+            isNegative1 = False
+            if expression[3] == '-':
+                isNegative2 = True
+            else:
+                isNegative2 = False        
+
+        # Put everything in the same denominator:
+        num1, num2, den1, den2 = int(num1), int(num2), int(den1), int(den2)
+        num1 *= den2
+        num2 *= den1
+        new_den = den1 * den2
+
+        #does calculation
+        if isNegative1 and isNegative2:
+            new_num = num1 + num2
+        elif (not isNegative1) and not (isNegative2):
+            new_num = num1 + num2
+        elif isNegative1 and not isNegative2:
+            new_num = num2 - num1
+        elif not isNegative1 and isNegative2:
+            new_num = num1 - num2
+
+        #checks if it's irreducible and fixes if not
+        for i in range(1, 10):
+            if new_den % i == 0 and new_num % i == 0:
+                new_den /= i
+                new_num /= i 
+
+        new_num, new_den = int(new_num), int(new_den)
+        return str(new_num) + "/" + str(new_den)
+
+test = Solution()
+
+print(test.fractionAddition('-1/2+2/3'))
+print(test.fractionAddition('1/2-2/3'))
