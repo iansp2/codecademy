@@ -1,2 +1,2 @@
 This is the initial content.
-This is the main branch edit.
+This is the new-branch edit.
