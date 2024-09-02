@@ -4,6 +4,9 @@ class TreeNode:
 	def __init__(self, value):
 		self.value = value
 		self.children = []
+	
+	def __repr__(self):
+		return self.value	
 
 	def add_child(self, child_node):
 		print("Adding " + child_node.value)
