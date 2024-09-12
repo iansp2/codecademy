@@ -1,0 +1,16 @@
+.breadcrumb {
+  margin-bottom: 5px;
+  color: hsla(88, 100%, 25%, 1);
+  font-weight: bold;
+}
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li.location+li.location::before {
+  content: ">";
+}
+
+li.attribute {
+  color: gray;
+}
