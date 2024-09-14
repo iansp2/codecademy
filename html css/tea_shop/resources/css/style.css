@@ -1,0 +1,146 @@
+/* Universal Styles */
+
+html {
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  height: 69px;
+  display: flex;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+img.logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 50px;
+}
+
+nav {
+  display: block;
+  margin-left: auto;
+}
+
+ul {
+  text-decoration: underline;
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding-right: 15px;
+}
+
+a:link {
+  color: seashell;
+}
+
+a:visited {
+  color: seashell;
+}
+
+a:hover {
+  color: teal;
+  cursor: pointer;
+}
+
+a:active {
+  color: seashell;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.mission {
+  background-color: black;
+  align-self: center;
+  max-width: 1200px;
+  min-width: 100%;
+}
+
+/* Tea of the Month */
+
+.tea-month {
+  margin: 60px;
+}
+
+.featured-tea {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.tea-photo {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.tea {
+  display: inline;
+}
+
+/* Locations */
+
+.locations {
+  min-height: 500px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.locations-title {
+  background-image: url("../images/img-locations-background.jpg");
+  min-height: 550px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.locations-title h2 {
+  margin-top: 60px;
+}
+
+.locations-box {
+  background-color: black;
+  width: 300px;
+  margin: 20px;
+}
+
+/* Footer */
+
+footer {
+  height: 200px;
+}
+
+footer p {
+  text-align: left;
+  font-size: small;
+  margin-left: 20px;
+}
