@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root font size for REM usage */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* Body and general settings */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%; /* Using percentages for responsiveness */
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem; /* Using REM for scalable font size */
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  height: 80vh; /* Using vh for full-height hero section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb3b3;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-image {
+  width: 100%; /* Responsive image using percentage */
+  height: auto;
+}
+
+/* Main content area */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Using grid layout */
+  gap: 2rem;
+  padding: 2rem 5%; /* Percentages for spacing */
+}
+
+.content-item {
+  padding: 2rem;
+  background-color: #87CEEB;
+  font-size: 1rem;
+  border: 2px solid #333; /* Border in pixels for precision */
+  border-radius: 8px;
+}
+
+/* Footer section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 5%;
+  font-size: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem; /* Using REM for scalable font size */
+}
+
+/* Codecademy example for scaling images or videos */
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
