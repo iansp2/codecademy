@@ -2,13 +2,14 @@ let input = 'turpentine and turtles';
 let vowels = 'aeiou';
 const resultArray = [];
 
-for (let i = 0; i < input.length; i++) {
-  if (input[i] === 'e' || input[i] ==='u') {
-        resultArray.push(input[i]);
+// Rules of whale talk: only vowels, E's and U's are doubled, all caps
+for (const char of input) {
+  if (char === 'e' || char ==='u') {
+        resultArray.push(char);
       }
-  for (let j = 0; j < vowels.length; j++) {
-    if (input[i] === vowels[j]) {
-      resultArray.push(vowels[j]);
+  for (const letter of vowels) {
+    if (char === letter) {
+      resultArray.push([char]);
     }
   }
 }
