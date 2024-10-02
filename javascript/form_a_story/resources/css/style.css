@@ -1,44 +1,66 @@
-/* This code is from codecademy, my contributions were the form elements */
 body {
   background-color: rgb(255, 199, 64);
   font-family: "Open Sans", Arial;
 }
 
 form {
-  line-height: 27px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  justify-items: start;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-h2 {
-  font-size: 20px;
+.form-group, .form-group-inline {
+  display: contents;
 }
 
-input[type="text"], input[type="number"] {
+label {
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"], input[type="number"], select, textarea {
   min-height: 15px;
   border-radius: 5px;
-  border:1px solid #cccccc;
+  border: 1px solid #cccccc;
+  width: 100%;
 }
 
 input[type="radio"] {
   margin-left: 12px;
 }
 
+.form-group-inline {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  grid-column: span 2;
+  margin-top: 15px;
+}
+
 #main {
   background-color: rgba(255,255,255,0.8);
   text-align: center;
-  height: 80vh;
+  height: auto;
   border-radius: 15px;
   margin: 2% 10%;
+  padding: 20px;
   overflow: auto;
 }
 
-#story {
-  padding: 0 3%;
-}
-
-#top {
-  background-color: rgb(255, 255, 255);
-  margin: 2% 10%;
-  border-radius: 15px;
+#main h1 {
+  text-align: center;
 }
 
 #top img {

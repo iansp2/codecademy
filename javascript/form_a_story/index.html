@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--- This code is from codecademy, my contributions were the form elements --->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -16,58 +15,70 @@
     <section id="main">
       <h1>Complete the Form -<br> Complete the Story!</h1>
       <hr>
-      <!--Add your form below:-->
       <form action="story.html" method="GET">
-        <label for="animal-1">Animal 1: </label>
-        <input type="text" id="animal-1" name="animal-1" required>
-        <br>
+        <div class="form-group">
+          <label for="animal-1">Animal 1: </label>
+          <input type="text" id="animal-1" name="animal-1" required>
+        </div>
 
-        <label for="animal-2">Animal 2: </label>
-        <input type="text" id="animal-2" name="animal-2" required>
-        <br>
-        
-        <label for="animal-2">Animal 3: </label>
-        <input type="text" id="animal-3" name="animal-3" required>
-        <br>
+        <div class="form-group">
+          <label for="animal-2">Animal 2: </label>
+          <input type="text" id="animal-2" name="animal-2" required>
+        </div>
 
-        <label for="adj-1">Adjective (ends in -ed): </label>
-        <input type="text" id="adj-1" name="adj-1" required>
-        <br>
+        <div class="form-group">
+          <label for="animal-3">Animal 3: </label>
+          <input type="text" id="animal-3" name="animal-3" required>
+        </div>
 
-        <label for="verb-1">Verb (ends in -ing): </label>
-        <input type="text" id="verb-1" name="verb-1" required>
-        <br>
+        <div class="form-group">
+          <label for="adj-1">Adjective (ends in -ed): </label>
+          <input type="text" id="adj-1" name="adj-1" required>
+        </div>
 
-        <label for="num-1">Number: </label>
-        <input type="number" id="num-1" name="num-1" required>
-        <br>
+        <div class="form-group">
+          <label for="verb-1">Verb (ends in -ing): </label>
+          <input type="text" id="verb-1" name="verb-1" required>
+        </div>
 
-        <span> Yes or No: </span>
-        <input id="yes" type="radio" name="answer" value="yes" required>
-        <label for="yes">Yes</label>
-        <input id="no" type="radio" name="answer" value="no" required>
-        <label for="no">No</label>
-        <br>
+        <div class="form-group">
+          <label for="num-1">Number: </label>
+          <input type="number" id="num-1" name="num-1" required>
+        </div>
 
-        <label for="speed">Relative speed (ends in -er): </label>
-        <select id="speed" name="speed" required>
-          <option value="faster">Faster</option>
-          <option value="slower">Slower</option>
-          <option value="speedier">Speedier</option>
-        </select>
-        <br>
+        <div class="form-group-inline">
+          <label for="yes-no">Yes or No:</label>
+          <input id="yes" type="radio" name="answer" value="yes" required>
+          <label for="yes">Yes</label>
+          <input id="no" type="radio" name="answer" value="no" required>
+          <label for="no">No</label>
+        </div>
 
-        <label for="quote">Motivational Quote:</label>
-        <input id="quote" name="quote" type="text" list="quote-choices" required>
-        <datalist id="quote-choices">
-          <option value="winner gets ice cream!"></option>
-        </datalist>
-        <br>
+        <div class="form-group">
+          <label for="speed">Relative speed (ends in -er): </label>
+          <select id="speed" name="speed" required>
+            <option value="faster">Faster</option>
+            <option value="slower">Slower</option>
+            <option value="speedier">Speedier</option>
+          </select>
+        </div>
 
-        <label for="message">Meaningful message:</label>
-        <textarea name="message" id="message" rows="5" cols="25" required>Slow and steady wins the race.</textarea>
+        <div class="form-group">
+          <label for="quote">Motivational Quote:</label>
+          <input id="quote" name="quote" type="text" list="quote-choices" required>
+          <datalist id="quote-choices">
+            <option value="winner gets ice cream!"></option>
+          </datalist>
+        </div>
 
-        <input type="submit" value="Form My Story!">
+        <div class="form-group">
+          <label for="message">Meaningful message:</label>
+          <textarea name="message" id="message" rows="5" cols="25" required>Slow and steady wins the race.</textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Form My Story!">
+        </div>
       </form>
     </section>
   </body>
